@@ -59,6 +59,13 @@ class Product(models.Model):
     def __str__(self):
         return self.title
     
- 
+//------------------------------------------------------------------------------------------------------------------------------------ 
+
+Change MIDDLEWARE_CLASSES to MIDDLEWARE in settings as described here : 
+https://stackoverflow.com/questions/37949198/wsgirequest-object-has-no-attribute-user-django-admin/37950161#37950161
+
+
 //------------------------------------------------------------------------------------------------------------------------------------   
 
+==> python manage.py createsuperuser for admin
+//------------------------------------------------------------------------------------------------------------------------------------
