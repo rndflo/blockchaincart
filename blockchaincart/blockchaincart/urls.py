@@ -1,11 +1,15 @@
 from django.conf.urls import include, url
 from rest_framework import routers
+from django.urls import path
+from django.contrib import admin
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 router = routers.DefaultRouter()
 urlpatterns = [
-    url('', include(router.urls)),
+    # url('', include(router.urls)),
+    path('', include('shop.urls')),
+    path('admin/', admin.site.urls),
     # Examples:
     # url(r'^$', 'blockchaincart.views.home', name='home'),
     # url(r'^blockchaincart/', include('blockchaincart.foo.urls')),
