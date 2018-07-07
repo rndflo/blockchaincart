@@ -12,3 +12,4 @@ Open source implementation of shopping cart integrated with blockchain technolog
 
 ==> pip3 install -r requirements.txt
 
+==> python manage.py startapp shop
